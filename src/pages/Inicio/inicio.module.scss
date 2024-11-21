@@ -1,7 +1,8 @@
 .imagemContainer {
   position: relative;
   display: inline-block;
-  img {
+  width: 100%;
+  .mainImg {
     display: block;
     width: 100%;
     height: auto;

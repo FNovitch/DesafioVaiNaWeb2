@@ -28,7 +28,7 @@
 
 .spanCard {
   font-size: 1.9rem;
-  font-weight: 600;
+  font-weight: bold;
   color: #005695;
   margin-left: 6%;
   margin-top: 4%;
@@ -55,10 +55,12 @@
   }
   .cardText {
     text-align: center;
+    font-weight: 300;
     font-size: 1.1rem;
   }
 }
 
+//Tela Mobile
 @media (max-width: 480px) {
   .imagemContainer {
     .mainImg {
@@ -76,9 +78,36 @@
       transform: translate(-50%, -50%);
     }
   }
+
+  .cardSection {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+  }
+  .cardContainer {
+    gap: 1%;
+    height: auto;
+    flex-direction: column;
+    margin: 10% 10%;
+    .card {
+      width: 80%;
+      height: 50%;
+      border-radius: 8px;
+      margin: 5% 5%;
+    }
+    .cardText {
+      margin: 5% 0%;
+    }
+  }
 }
-.cardSection {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+
+/* Para tablets entre 481px e 1024px */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .cardContainer {
+    .card {
+      height: 80%;
+      width: 75%;
+    }
+  }
 }

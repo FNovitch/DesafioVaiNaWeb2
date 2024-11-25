@@ -1,4 +1,3 @@
-import imagemMain from "../../assets/main.png";
 import imagemCard1 from "../../assets/card1.png";
 import imagemCard2 from "../../assets/card2.png";
 import imagemCard3 from "../../assets/card3.png";
@@ -9,7 +8,6 @@ export default function Inicio() {
   return (
     <div>
       <section className={style.imagemContainer}>
-        <img src={imagemMain} className={style.mainImg} alt="Imagem de alguns livros" />
         <span className={style.imagemTexto}>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</span>
       </section>
 

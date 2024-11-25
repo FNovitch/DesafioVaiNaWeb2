@@ -1,0 +1,74 @@
+.LivrosdoadosContainer {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  padding: 0 10%;
+  span {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 3% 0%;
+  }
+}
+.livroscard {
+  border: 3px solid #005695;
+  height: 45%;
+  width: 25%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cardconteudo {
+    width: 55%;
+    text-align: center;
+  }
+  p {
+    margin-top: 4%;
+    font-style: italic;
+  }
+  p:nth-child(2) {
+    font-weight: bold;
+    margin-bottom: 10%;
+  }
+
+  img {
+    margin-bottom: 10%;
+  }
+}
+
+// Tela Mobile
+@media (max-width: 480px) {
+  .LivrosdoadosContainer {
+    align-items: center;
+    height: 80vh;
+    gap: 10%;
+    span {
+      margin-top: 10%;
+    }
+  }
+
+  .livroscard {
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 60%;
+  }
+}
+
+// Para Tablets
+@media (min-width: 481px) and (max-width: 1024px) {
+  .LivrosdoadosContainer {
+    gap: 10%;
+    span {
+      margin-top: 5%;
+    }
+  }
+
+  .livroscard {
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 50%;
+  }
+}

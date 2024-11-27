@@ -9,7 +9,7 @@ export default function Footer() {
     <div>
       <footer className={style.footer}>
         <div className={style.primeiroFooter}>
-          <span>4002-8922</span>
+          <span className={style.footertext}>4002-8922</span>
           <div className={style.iconsFooter}>
             <img src={facebookIcon} alt="Icone do Facebook" />
             <img src={twitterIcon} alt="Icone do Twitter" />
@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
 
         <div className={style.segundoFooter}>
-          <span>Layout desenvolvido pela Vai Na Web para fins educativos - 2024 </span>
+          <span className={style.footertext}>Layout desenvolvido pela Vai Na Web para fins educativos - 2024 </span>
         </div>
       </footer>
     </div>

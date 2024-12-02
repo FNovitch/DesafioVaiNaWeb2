@@ -42,6 +42,9 @@
   width: 60%;
   height: 8%;
   border-radius: 10px;
+  &::placeholder {
+    padding-left: 5%;
+  }
 }
 
 .formbutton {

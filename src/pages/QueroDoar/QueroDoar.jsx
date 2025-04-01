@@ -29,10 +29,7 @@ export default function QueroDoar() {
       autor,
       image_url,
     };
-    await axios.post(
-      "https://api-livros-t3-9u2p.onrender.com/doar",
-      dadosParaEnviar
-    );
+    await axios.post("https://api-ilql.onrender.com/doar", dadosParaEnviar);
   };
 
   return (

@@ -4,13 +4,13 @@ import axios from "axios";
 import { useState } from "react";
 
 export default function QueroDoar() {
-  const [título, setTítulo] = useState("");
+  const [titulo, setTitulo] = useState("");
   const [categoria, setCategoria] = useState("");
   const [autor, setAutor] = useState("");
   const [image_url, setImage_url] = useState("");
 
-  const pegarTítulo = (e) => {
-    setTítulo(e.target.value);
+  const pegarTitulo = (e) => {
+    setTitulo(e.target.value);
   };
   const pegarCategoria = (e) => {
     setCategoria(e.target.value);
@@ -24,7 +24,7 @@ export default function QueroDoar() {
 
   const envioDados = async () => {
     const dadosParaEnviar = {
-      título,
+      titulo,
       categoria,
       autor,
       image_url,
@@ -49,7 +49,7 @@ export default function QueroDoar() {
             className={style.forminput}
             type="text"
             placeholder="Título"
-            onChange={pegarTítulo}
+            onChange={pegarTitulo}
             required
           />
           <input

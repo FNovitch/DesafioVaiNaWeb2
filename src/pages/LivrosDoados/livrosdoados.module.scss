@@ -60,27 +60,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 10px;
-    width: 90%; /* Evitar que os cards fiquem muito largos */
+    gap: 30px;
+    width: 80%;
+    height: 80%;
+    padding: 0;
+    margin: 0;
   }
 
   .card {
-    width: 100%; /* Cada card ocupa toda a largura */
-    max-width: none; /* Remove limitações de tamanho */
+    width: 100%;
+    max-width: none;
   }
 }
 
 // Para Tablets
 @media (min-width: 481px) and (max-width: 1024px) {
   .livroscard {
-    display: grid; /* Altere para grid para organizar melhor */
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-    gap: 20px; /* Espaçamento entre os cards */
-    width: 90%; /* Ajustar largura geral */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
   }
 
   .card {
-    max-width: 100%; /* Garante que se ajuste na grid */
-    width: auto;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
   }
 }

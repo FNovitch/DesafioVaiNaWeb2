@@ -1,7 +1,6 @@
 import style from "../LivrosDoados/livrosdoados.module.scss";
-import Livrodoado from "../../assets/livrodoado.png";
 import axios from "axios";
-import { useState, UseEffect, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function About() {
   const [livros, setLivros] = useState([]);
@@ -19,15 +18,14 @@ export default function About() {
       <span>Livros Doados</span>
 
       <div className={style.livroscard}>
-        <div className={style.cardconteudo}>
-          {livros.map((livro) => (
-            <div>
-              <h3>{livro.titulo}</h3>
-              <img src="{livro.image_url}" alt="" />
-              <h6>{livro.autor}</h6>
-            </div>
-          ))}
-        </div>
+        {livros.map((livro) => (
+          <div className={style.card} key={livro.id}>
+            <h3>{livro.titulo}</h3>
+            <h6 className={style.categoria}>{livro.categoria}</h6>
+            <img src={livro.image_url} alt="" />
+            <h6>{livro.autor}</h6>
+          </div>
+        ))}
       </div>
     </section>
   );
